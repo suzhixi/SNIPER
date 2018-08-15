@@ -1,11 +1,11 @@
-# SNIPER
-SNIPER is a framework to detect riboSNitch-enriched elements (5'UTR, 3'UTR and lncRNAs) in cancer genome.
+# SNIPER</br>
+SNIPER is a framework to detect riboSNitch-enriched elements (5'UTR, 3'UTR and lncRNAs) in cancer genome.</br>
 
-**Requirement**
-1. ViennaRNA RNAplfold
-2. Perl package:</br>
-  Data::Dumper</br>
-  Statistics::R</br>
+**Requirement**</br>
+1. ViennaRNA RNAplfold</br>
+2. Perl package: </br>
+  Data::Dumper </br>
+  Statistics::R </br>
 3.bedtools</br>
 4.human reference genome (.fa)</br>
 5.gene annotation (.gtf)</br>
