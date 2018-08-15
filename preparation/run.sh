@@ -7,8 +7,7 @@ echo "#Step one: get referece sequence and predict RNA secondary structure" > $d
 echo "less $gtf |sed '/#/d'|grep  -w 'exon'|awk -F \"\t\" '{print \$1\"\\t\"\$4-1\"\\t\"\$5\"\\t\"\$6\"\\t\"\$7\"\\t\"\$8\"\\t\"\$9\"\\t\"\$10\"\\t\"\$11\"\\t\"\$12}' > NR.bed" >> $dir/pre.sh
 echo "$bedtools getfasta -fi $fa -bed NR.bed -tab -fo NR.bed.fasta.txt" >> $dir/pre.sh
 echo "perl 0.get.NR.fasta.pl & " >> $dir/pre.sh
-echo "/mnt/public/hefunan/Tools/ViennaRNA/ViennaRNA-2.1.9/Progs/RNAplfold -W 200 -L 150 -c 0 -u 1 < All.NR.fasta" >> $dir/pre.sh
-echo "find RNAplfold -name *lunp|sed 's/\//\\t/g'|awk '{print \$2\"\\t$dir/\"\$1\"/\"\$2}' > Ref.list" >> $dir/pre.sh
+
 
 echo "#Step two: get coresponding RNA position" >> $dir/pre.sh
 echo "perl 1.merge_gtf_reverse_exon.pl& " >> $dir/pre.sh
