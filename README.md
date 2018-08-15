@@ -1,4 +1,5 @@
 # SNIDER
+
 **Requirement:**
 1. ViennaRNA RNAplfold
 2. Perl package:</br>
@@ -7,12 +8,10 @@ Statistics::R</br>
 3.bedtools</br>
 4.human reference genome (.fa)</br>
 5.gene annotation (.gtf)</br>
+
 **Preparation**</br>
 >cd preparation</br>
 >sh run.sh</br>
-
-
-
 
 **Pipeline**</br>
 >cd test
