@@ -16,8 +16,8 @@ Statistics::R</br>
 
 **Pipeline**</br>
 >cd test
->ln -s ../preparation/All.NR.filter.fasta .
->ln -s ../preparation/Chrpos_RNApos.txt .
->ln -s ../preparation/Ref.list .
->sh run.sh
+>ln -s ../preparation/All.NR.filter.fasta .</br>
+>ln -s ../preparation/Chrpos_RNApos.txt .</br>
+>ln -s ../preparation/Ref.list .</br>
+>sh run.sh</br>
 
